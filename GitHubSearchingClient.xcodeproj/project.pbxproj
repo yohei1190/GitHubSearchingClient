@@ -17,6 +17,7 @@
 		47130B8C2AE9DE2900200D99 /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47130B892AE9DE2900200D99 /* Owner.swift */; };
 		47130B8D2AE9DE2900200D99 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47130B8A2AE9DE2900200D99 /* Repository.swift */; };
 		47130B8E2AE9DE2900200D99 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47130B8B2AE9DE2900200D99 /* SearchResult.swift */; };
+		47130B902AE9DF0400200D99 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47130B8F2AE9DF0400200D99 /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		47130B892AE9DE2900200D99 /* Owner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		47130B8A2AE9DE2900200D99 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		47130B8B2AE9DE2900200D99 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		47130B8F2AE9DF0400200D99 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 		47130B882AE9DE1400200D99 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				47130B8F2AE9DF0400200D99 /* WebService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47130B902AE9DF0400200D99 /* WebService.swift in Sources */,
 				47130B5E2AE9D3A800200D99 /* ContentView.swift in Sources */,
 				47130B8C2AE9DE2900200D99 /* Owner.swift in Sources */,
 				47130B8E2AE9DE2900200D99 /* SearchResult.swift in Sources */,
