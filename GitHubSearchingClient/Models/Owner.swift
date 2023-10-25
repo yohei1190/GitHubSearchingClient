@@ -7,20 +7,7 @@
 
 import Foundation
 
-struct Owner: Decodable, Identifiable {
-    let id: ID
+struct Owner: Decodable {
+    let login: String
     let avatarUrl: String
-
-    struct ID: Decodable, Hashable {
-        let value: Int
-
-        init(value: Int) {
-            self.value = value
-        }
-
-        init(from decoder: Decoder) throws {
-            let container = try decoder.singleValueContainer()
-            value = try container.decode(Int.self)
-        }
-    }
 }
