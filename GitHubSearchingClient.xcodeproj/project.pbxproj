@@ -18,6 +18,7 @@
 		47130B8D2AE9DE2900200D99 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47130B8A2AE9DE2900200D99 /* Repository.swift */; };
 		47130B8E2AE9DE2900200D99 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47130B8B2AE9DE2900200D99 /* SearchResult.swift */; };
 		47130B902AE9DF0400200D99 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47130B8F2AE9DF0400200D99 /* WebService.swift */; };
+		47130B922AE9DF5600200D99 /* RepositoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47130B912AE9DF5600200D99 /* RepositoryStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,11 @@
 		47130B8A2AE9DE2900200D99 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		47130B8B2AE9DE2900200D99 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
 		47130B8F2AE9DF0400200D99 /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		47130B912AE9DF5600200D99 /* RepositoryStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryStore.swift; sourceTree = "<group>"; };
+		47130B932AE9DFB200200D99 /* SafariView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		47130B942AE9DFB200200D99 /* RepositoryListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryListView.swift; sourceTree = "<group>"; };
+		47130B952AE9DFB200200D99 /* RepositoryCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryCardView.swift; sourceTree = "<group>"; };
+		47130B992AE9E00400200D99 /* PreviewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,7 @@
 		47130B862AE9DE0A00200D99 /* Stores */ = {
 			isa = PBXGroup;
 			children = (
+				47130B912AE9DF5600200D99 /* RepositoryStore.swift */,
 			);
 			path = Stores;
 			sourceTree = "<group>";
@@ -306,6 +313,7 @@
 				47130B8C2AE9DE2900200D99 /* Owner.swift in Sources */,
 				47130B8E2AE9DE2900200D99 /* SearchResult.swift in Sources */,
 				47130B5C2AE9D3A800200D99 /* GitHubSearchingClientApp.swift in Sources */,
+				47130B922AE9DF5600200D99 /* RepositoryStore.swift in Sources */,
 				47130B8D2AE9DE2900200D99 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
