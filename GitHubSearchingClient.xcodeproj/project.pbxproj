@@ -19,6 +19,7 @@
 		47130B8E2AE9DE2900200D99 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47130B8B2AE9DE2900200D99 /* SearchResult.swift */; };
 		47130B902AE9DF0400200D99 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47130B8F2AE9DF0400200D99 /* WebService.swift */; };
 		47130B922AE9DF5600200D99 /* RepositoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47130B912AE9DF5600200D99 /* RepositoryStore.swift */; };
+		47130B9A2AE9E00400200D99 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47130B992AE9E00400200D99 /* PreviewData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +124,7 @@
 		47130B612AE9D3A900200D99 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				47130B992AE9E00400200D99 /* PreviewData.swift */,
 				47130B622AE9D3A900200D99 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -311,6 +313,7 @@
 				47130B902AE9DF0400200D99 /* WebService.swift in Sources */,
 				47130B5E2AE9D3A800200D99 /* ContentView.swift in Sources */,
 				47130B8C2AE9DE2900200D99 /* Owner.swift in Sources */,
+				47130B9A2AE9E00400200D99 /* PreviewData.swift in Sources */,
 				47130B8E2AE9DE2900200D99 /* SearchResult.swift in Sources */,
 				47130B5C2AE9D3A800200D99 /* GitHubSearchingClientApp.swift in Sources */,
 				47130B922AE9DF5600200D99 /* RepositoryStore.swift in Sources */,
