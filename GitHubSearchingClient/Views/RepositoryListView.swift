@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RepositoryListView: View {
     @EnvironmentObject private var repositoryStore: RepositoryStore
+    @EnvironmentObject private var sharedError: SharedError
 
     @State private var searchText = ""
     @State private var selectedRepository: Repository?
@@ -29,7 +30,7 @@ struct RepositoryListView: View {
             do {
                 try await repositoryStore.searchRepositories(for: searchText)
             } catch {
-                print(error)
+                sharedError.set(error: error)
             }
         }
     }
@@ -64,6 +65,9 @@ struct RepositoryListView: View {
         .sheet(item: $selectedRepository) { repository in
             SafariView(url: URL(string: repository.htmlUrl)!)
         }
+        .alert("通信エラー", isPresented: sharedError.isPresenting, actions: {}) {
+            Text("インターネットの接続状況を確認して再度お試しください。")
+        }
     }
 }
 
@@ -72,6 +76,7 @@ struct RepositoryList_Previews: PreviewProvider {
     static var previews: some View {
         RepositoryListView()
             .environmentObject(RepositoryStore(webService: PreviewWebService(repositories: PreviewData.repositories)))
+            .environmentObject(SharedError())
     }
 }
 
@@ -80,6 +85,7 @@ struct RepositoryList_Previews_Empty_Data: PreviewProvider {
     static var previews: some View {
         RepositoryListView()
             .environmentObject(RepositoryStore(webService: PreviewWebService(repositories: [])))
+            .environmentObject(SharedError())
     }
 }
 
@@ -89,5 +95,20 @@ struct PreviewWebService: WebServiceProtocol {
     func searchRepositories(for _: String) async throws -> [Repository] {
         try await Task.sleep(for: .seconds(2))
         return repositories
+    }
+}
+
+// 検索後にエラーを返す場合
+struct RepositoryList_Previews_Error: PreviewProvider {
+    static var previews: some View {
+        RepositoryListView()
+            .environmentObject(RepositoryStore(webService: PreviewErrorWebService()))
+            .environmentObject(SharedError())
+    }
+}
+
+struct PreviewErrorWebService: WebServiceProtocol {
+    func searchRepositories(for _: String) async throws -> [Repository] {
+        throw NetworkError.badRequest
     }
 }

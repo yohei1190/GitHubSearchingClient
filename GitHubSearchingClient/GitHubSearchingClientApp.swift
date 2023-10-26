@@ -13,6 +13,7 @@ struct GitHubSearchingClientApp: App {
         WindowGroup {
             RepositoryListView()
                 .environmentObject(RepositoryStore())
+                .environmentObject(SharedError())
         }
     }
 }
