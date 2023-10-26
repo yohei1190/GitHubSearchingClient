@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		37F0814EE03CBEEC61E19DB2 /* Pods_GitHubSearchingClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848C8C94B3E2FD9AA8597B0C /* Pods_GitHubSearchingClient.framework */; };
 		47130B5C2AE9D3A800200D99 /* GitHubSearchingClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47130B5B2AE9D3A800200D99 /* GitHubSearchingClientApp.swift */; };
-		47130B5E2AE9D3A800200D99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47130B5D2AE9D3A800200D99 /* ContentView.swift */; };
 		47130B602AE9D3A900200D99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47130B5F2AE9D3A900200D99 /* Assets.xcassets */; };
 		47130B632AE9D3A900200D99 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47130B622AE9D3A900200D99 /* Preview Assets.xcassets */; };
 		47130B6D2AE9D3AA00200D99 /* GitHubSearchingClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47130B6C2AE9D3AA00200D99 /* GitHubSearchingClientTests.swift */; };
@@ -50,7 +49,6 @@
 		108F38FC86C38CECABD9B56B /* Pods-GitHubSearchingClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubSearchingClient.release.xcconfig"; path = "Target Support Files/Pods-GitHubSearchingClient/Pods-GitHubSearchingClient.release.xcconfig"; sourceTree = "<group>"; };
 		47130B582AE9D3A800200D99 /* GitHubSearchingClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubSearchingClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47130B5B2AE9D3A800200D99 /* GitHubSearchingClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchingClientApp.swift; sourceTree = "<group>"; };
-		47130B5D2AE9D3A800200D99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		47130B5F2AE9D3A900200D99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47130B622AE9D3A900200D99 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		47130B682AE9D3AA00200D99 /* GitHubSearchingClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubSearchingClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,7 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				47130B5B2AE9D3A800200D99 /* GitHubSearchingClientApp.swift */,
-				47130B5D2AE9D3A800200D99 /* ContentView.swift */,
 				47130B882AE9DE1400200D99 /* Services */,
 				47130B872AE9DE1000200D99 /* Models */,
 				47130B862AE9DE0A00200D99 /* Stores */,
@@ -451,7 +448,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				47130B902AE9DF0400200D99 /* WebService.swift in Sources */,
-				47130B5E2AE9D3A800200D99 /* ContentView.swift in Sources */,
 				47130B8C2AE9DE2900200D99 /* Owner.swift in Sources */,
 				47130B9A2AE9E00400200D99 /* PreviewData.swift in Sources */,
 				47130B8E2AE9DE2900200D99 /* SearchResult.swift in Sources */,

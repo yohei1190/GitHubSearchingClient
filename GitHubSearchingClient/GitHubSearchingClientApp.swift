@@ -11,7 +11,8 @@ import SwiftUI
 struct GitHubSearchingClientApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RepositoryListView()
+                .environmentObject(RepositoryStore())
         }
     }
 }
